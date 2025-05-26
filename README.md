@@ -38,3 +38,4 @@ Dichas especificaciones del modelo se han investigado y tomado de las investigac
 
 ## Referencias 
 S. Aksoy, P. Demircioglu y I. Bogrekci, "Evaluating pretrained CNNs for distinguishing fresh vs rotten fruits and vegetables," Journal of Applied Horticulture, vol. 26, no. 3, pp. 361–366, 2024. [En línea]. Disponible: https://doi.org/10.37855/jah.2024.v26i03.69
+M. S. Miah, T. Tasnuva, M. Islam, et al., "An Advanced Method of Identification Fresh and Rotten Fruits using Different Convolutional Neural Networks," 2021 International Conference on Computer Communications and Networks Technology (ICCCNT), July 2021, doi: 10.1109/ICCCNT51525.2021.9580117. Link: https://www.researchgate.net/publication/355895633_An_Advanced_Method_of_Identification_Fresh_and_Rotten_Fruits_using_Different_Convolutional_Neural_Networks 
