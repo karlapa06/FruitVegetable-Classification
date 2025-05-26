@@ -33,7 +33,16 @@ Dichas especificaciones del modelo se han investigado y tomado de las investigac
 
 
 ### Evaluación del modelo
+Para la evaluación del modelo se tomaran cuenta los valores de Accuracy, precision y recall tres criterios utilizados para evaluar un modelo de clasificación. Asimismo la Matriz de Confusión han sido utilizados para evaluar el modelo. 
+* Accuracy: 83.80%
+* Precision: 82.98%
+* Recall: 79.95%
+* F1 Score: 79.89%
 
+Matriz de Confusión 
+<img width="586" alt="Captura de pantalla 2025-05-25 a la(s) 11 40 13 p m" src="https://github.com/user-attachments/assets/601585a8-56ee-4326-8cae-22e854374306" />
+
+En la evaluación del modelo se puede observar que 
 ## Conclusiones 
 
 ## Referencias 
