@@ -39,10 +39,12 @@ Para la evaluación del modelo se tomaran cuenta los valores de Accuracy, precis
 * Recall: 79.95%
 * F1 Score: 79.89%
 
-Matriz de Confusión 
+#### Matriz de Confusión 
+
 <img width="586" alt="Captura de pantalla 2025-05-25 a la(s) 11 40 13 p m" src="https://github.com/user-attachments/assets/601585a8-56ee-4326-8cae-22e854374306" />
 
-En la evaluación del modelo se puede observar que 
+En la evaluación del modelo se puede observar que apesar de que no termino cada una de las epochs, tiene un accuracy alto de 83.80%, sin embargo puede mejorar ya que la arquitectura que se ha empleado para el entrenamiento del modelo debería de obtener un mayor porcentaje en cada uno de las métricas que se obtuvieron. 
+
 ## Conclusiones 
 
 ## Referencias 
