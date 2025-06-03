@@ -49,7 +49,8 @@ Para la evaluación del modelo se tomarán cuenta los valores de Accuracy, preci
 
 #### Matriz de Confusión 
 
-<img width="586" alt="Captura de pantalla 2025-05-25 a la(s) 11 40 13 p m" src="https://github.com/user-attachments/assets/601585a8-56ee-4326-8cae-22e854374306" />
+![matriz1](https://github.com/user-attachments/assets/d9016500-317d-42e9-bda0-e18f3880a998)
+
 
 Con el primer modelo que se desarrolló se puede observar que se obtiene un valor de Accuracy de 72%, y si observamos la matriz de confusión no existen tantos datos que se salgan de la clase que debe de predecir el modelo. Sin embargo, es necesario hacer modificaciones en el modelo para que se pueda obtener un mayor resultado. 
 
@@ -68,6 +69,8 @@ En los resultados de este modelo se han obtenido valores de Accuracy, F1 Score y
 * F1 Score:  0.4140
 
 #### Matriz de Confusión 2ndo Modelo
+![matriz2](https://github.com/user-attachments/assets/87f8dc16-d2d5-493f-aedc-4f618521aabc)
+
 
 ### Resultados:
 El modelo mejorado mostró un mejor desempeño gracias a su capacidad para aprender representaciones más refinadas, mientras que el modelo base destacó por su simplicidad y velocidad de entrenamiento. La elección entre ambos depende del contexto de uso: el modelo base es útil para despliegues rápidos o con recursos limitados, mientras que el modelo mejorado es más adecuado cuando se busca una mayor precisión y robustez del sistema.
@@ -75,6 +78,9 @@ El modelo mejorado mostró un mejor desempeño gracias a su capacidad para apren
 ## Conclusiones 
 En esta investigación se implementaron dos versiones del modelo basadas en la arquitectura preentrenada VGG16, aplicando la técnica de Transfer Learning para la clasificación de frutas y verduras en estado sano y podrido.
 
+El primer modelo, de estructura simple con una sola capa densa de 256 neuronas, obtuvo un accuracy de 72.23%, con métricas de recall 0.5398 y F1-score 0.5696. Estos resultados demuestran que incluso con una arquitectura ligera es posible obtener una precisión razonable, especialmente cuando se cuenta con un buen preprocesamiento de datos y un modelo base robusto como VGG16.
+
+El segundo modelo, una versión mejorada con múltiples capas densas (4096 → 1028 → 512 → 256) y técnicas de regularización como Dropout, fue diseñado para capturar representaciones más complejas y específicas del conjunto de datos. Sin embargo, sus métricas de evaluación (accuracy 67.90%, recall 0.4303, F1-score 0.4140) indican que no alcanzó el rendimiento esperado. Esto sugiere que, a pesar de su mayor capacidad, al modelo le faltó mayor tiempo de entrenamiento y un ajuste más fino de hiperparámetros, como el número de épocas, el aprendizaje progresivo (unfreezing de capas de VGG16), o estrategias más agresivas de regularización/adaptación de tasa de aprendizaje.
 
 
 ## Referencias 
