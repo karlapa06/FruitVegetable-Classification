@@ -8,7 +8,7 @@ Es de vital importancia mantener una buena salud, de la misma manera es necesari
 
 Es por ello que es necesario adoptar medidas a nivel nacional para aumentar la producción y el consumo de frutas y verduras, al hacerlas más asequibles para los consumidores, generando beneficios económicos, sociales y ambientales al disminuir la pérdida de las mismas. La tecnología e innovación son necesarias en todas las etapas de la cadena de suministro, desde la producción hasta el consumo, para mejorar tanto la calidad como la producción. 
 
-En este paper se demuestra creando un modelo de clasificación de red neuronal convolucional para el reconocimiento de imágenes usando Transfer Learning, el objetivo de esta investigación es desarrollar un modelo que distinga entre frutas y verduras sanas vs podridas se demuestra la metodología que se ha utilizado, como los algoritmos, el dataset, parámetros y finalmente la parte de resultados como de conclusiones.
+Este estudio propone el desarrollo de un modelo de clasificación de imágenes basado en redes neuronales convolucionales, utilizando Transfer Learning. Se describe la metodología empleada, los algoritmos utilizados, las características del conjunto de datos y, finalmente, los resultados obtenidos y sus respectivas conclusiones.
 
 
 ## Metodologías 
@@ -19,7 +19,7 @@ En este paper se demuestra creando un modelo de clasificación de red neuronal c
 
 ### Generación de Datos 
 Se utilizó ImageDataGenerator de TensorFlow para aplicar técnicas de aumento de datos como rotación, desplazamientos horizontales y verticales, y volteo horizontal. Esto ayudó a mejorar la generalización del modelo evitando sobreajuste, las transformaciones aplicadas incluyen: 
-* Escalamiento: Se normalizaron los valores de píxeles a un rango de [0,1], utilizando rescale=1.255 dentro de ImageDataGenerator, gracias a esto se mejora la eficiencia del entrenamiento. 
+* Escalamiento: Se normalizaron los valores de píxeles a un rango de [0,1], utilizando rescale=1./255 dentro de ImageDataGenerator, gracias a esto se mejora la eficiencia del entrenamiento. 
 * Rotation_range de 20 grados, para permitir que se apliquen rotaciones aleatorias de hasta 20 grados durante el entrenamiento se ha utilizado estos datos por la investigación que se ha realizado a través de papers pero sin alterar la identidad visual de las imágenes. 
 * Width y height shift range de hasta un 20%, para simular posiciones ligeramente distintas de los objetos dentro del marco.
 * Horizontal_flip verdadero para que el modelo no se sesga hacia una orientación específica y pueda aprender patrones más generales.
@@ -73,7 +73,7 @@ En los resultados de este modelo se han obtenido valores de Accuracy, F1 Score y
 
 
 ### Resultados:
-El modelo mejorado mostró un mejor desempeño gracias a su capacidad para aprender representaciones más refinadas, mientras que el modelo base destacó por su simplicidad y velocidad de entrenamiento. La elección entre ambos depende del contexto de uso: el modelo base es útil para despliegues rápidos o con recursos limitados, mientras que el modelo mejorado es más adecuado cuando se busca una mayor precisión y robustez del sistema.
+Aunque el modelo mejorado fue diseñado con una arquitectura más profunda y mayor capacidad para aprender representaciones complejas, no logró superar al modelo base en términos de precisión ni desempeño general. Esto se debe principalmente a que requirió mayor tiempo de entrenamiento o ajuste de hiperparámetros, lo cual no se aplicó completamente en esta etapa. Por su parte, el modelo base, con una estructura más simple, demostró ser más efectivo con menos recursos, logrando mejores métricas de clasificación. La elección entre ambos depende del contexto: el modelo base es ideal para soluciones rápidas, eficientes y con buen rendimiento, mientras que el modelo mejorado tiene potencial para ofrecer mayor precisión si se entrena adecuadamente y se aplica fine-tuning.
 
 ## Conclusiones 
 En esta investigación se implementaron dos versiones del modelo basadas en la arquitectura preentrenada VGG16, aplicando la técnica de Transfer Learning para la clasificación de frutas y verduras en estado sano y podrido.
